@@ -14,7 +14,7 @@ searchBtn.addEventListener('click', () => {
 
 let getWeatherInfo = () => {
     let city = cityInput.value;
-    let apiKey = ''; // Replace this with your actual API key
+    let apiKey = 'a8c1d2697dd49736798e025886e20064';
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
     fetch(url)
