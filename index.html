@@ -3,31 +3,41 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <title>weather</title>
+    <title>Weather</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <div class="input-box">
-            <input type="text" value="London" placeholder="enter the city name"/>
-            <button><i class="fa-soliod fa-magnifuying-glass"></i></button>
+            <input type="text" value="London" placeholder="Enter the city name"/>
+            <button><i class="fas fa-search"></i></button>
         </div>
         <div class="weather-img">
             <img src="" alt="">
         </div>
-        <h3 class="temp">28&deg:C</h3> 
+        <h3 class="temp">28&deg;C</h3> 
         <h2 class="weather_descrip">Scattered Clouds</h2>
         <div class="other">
-            <i class="fa-solid fa-droplet"></i>
+            <i class="fas fa-tint"></i>
             <p class="humidity-value"></p>
             <p>Humidity</p>
         </div>
         <div class="wind-speed">
-         <i class="fa-solid fa-wind"></i>
-         <p class="windspeed-value"></p>
-         <p> Wind Speed</p>
+            <i class="fas fa-wind"></i>
+            <p class="windspeed-value"></p>
+            <p> Wind Speed</p>
         </div>
-     </div>
+    </div>
+    <div class="language-selection">
+        <label for="language-select">Select Language:</label>
+        <select id="language-select">
+            <option value="en">English</option>
+            <option value="kn">Kannada</option>
+            <option value="es">Spanish</option>
+            <option value="hi">Hindi</option>
+        </select>
+    </div>
+      
 </body>
 <script src="script.js"></script>
 </html>
