@@ -39,7 +39,7 @@ let speakWeatherInfo = (data) => {
     The wind speed is ${data.wind.speed} kilometers per hour.`;
 
     let speech = new SpeechSynthesisUtterance(message);
-    speech.lang = 'en-US';
+    speech.lang = 'kn';
     speech.volume = 1;
     speech.rate = 1;
     speech.pitch = 1;
