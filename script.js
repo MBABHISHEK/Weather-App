@@ -32,6 +32,7 @@ let getWeatherInfo = () => {
 }
 
 let speakWeatherInfo = (data) => {
+    console.log('hai');
     let message = `The weather in ${data.name} is ${data.weather[0].description}. 
     The temperature is ${data.main.temp} degrees Celsius. 
     The humidity is ${data.main.humidity} percent. 
