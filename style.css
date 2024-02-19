@@ -20,6 +20,7 @@ body{
  position: absolute;
  top:36%;
  left: 50%;
+ margin-top: 50px;
  transform: translate(-50%,-50%);
  border-radius: 7px;
  background: #F8F8FF;
