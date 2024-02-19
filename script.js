@@ -25,7 +25,25 @@ let getWeatherInfo = () => {
             weatherDescrip.innerHTML = data.weather[0].description;
             windspeed.innerHTML = `${data.wind.speed} Km/H`;
             humidity.innerHTML = `${data.main.humidity}%`;
+
+            // Adding voice output
+            speakWeatherInfo(data);
         });
+}
+
+let speakWeatherInfo = (data) => {
+    let message = `The weather in ${data.name} is ${data.weather[0].description}. 
+    The temperature is ${data.main.temp} degrees Celsius. 
+    The humidity is ${data.main.humidity} percent. 
+    The wind speed is ${data.wind.speed} kilometers per hour.`;
+
+    let speech = new SpeechSynthesisUtterance(message);
+    speech.lang = 'en-US';
+    speech.volume = 1;
+    speech.rate = 1;
+    speech.pitch = 1;
+
+    speechSynthesis.speak(speech);
 }
 
 getWeatherInfo();
